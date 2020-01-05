@@ -14,7 +14,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class homepage extends AppCompatActivity {
     private TextView mTextMessage;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
@@ -36,8 +36,10 @@ public class MainActivity extends AppCompatActivity {
                     navView2.getMenu().getItem(1).setChecked(true);
                     mTextMessage = findViewById(R.id.message);
                     navView2.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-                    Intent intent = new Intent(MainActivity.this, homepage2.class);
-                    startActivity(intent);
+
+                    
+
+
                     return true;
                 case R.id.navigation_notifications:
                     setContentView(R.layout.activity_main);
@@ -59,8 +61,5 @@ public class MainActivity extends AppCompatActivity {
         navView.getMenu().getItem(1).setChecked(true);
         mTextMessage = findViewById(R.id.message);
         navView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-        Intent intent = new Intent(MainActivity.this, homepage2.class);
-        startActivity(intent);
     }
-
 }
