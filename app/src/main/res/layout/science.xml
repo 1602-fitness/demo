@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BMI （身体质量指数）"
+            android:textSize="25dp"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:text="身体质量指数（BMI，Body Mass Index）是国际上常用的衡量人体肥胖程度和是否健康的重要标准，主要用于统计分析。肥胖程度的判断不能采用体重的绝对值，它天然与身高有关。因此，BMI 通过人体体重和身高两个数值获得相对客观的参数，并用这个参数所处范围衡量身体质量。体重指数BMI=体重/身高的平方（国际单位kg/㎡）理想BMI(18.5～23.9) = 体重(单位Kg) ÷ 身高的平方 (单位m)根据世界卫生组织定下的标准，亚洲人的BMI（体重指标Body Mass Index)若高于22.9便属于过重。亚洲人和欧美人属于不同人种，WHO的标准不是非常适合中国人的情况，为此制定了中国参考标准："/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bmi"/>
+
+    </LinearLayout>
+
+</LinearLayout>
