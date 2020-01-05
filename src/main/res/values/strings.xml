@@ -1,6 +1,0 @@
-<resources>
-    <string name="app_name">Fitness</string>
-    <string name="title_home">饮食</string>
-    <string name="title_dashboard">首页</string>
-    <string name="title_notifications">运动</string>
-</resources>

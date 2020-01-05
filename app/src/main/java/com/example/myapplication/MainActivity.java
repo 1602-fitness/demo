@@ -29,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
                     navView1.getMenu().getItem(0).setChecked(true);
                     mTextMessage = findViewById(R.id.message);
                     navView1.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+                    Intent intent = new Intent(MainActivity.this, login.class);
+                    startActivity(intent);
                     return true;
                 case R.id.navigation_dashboard:
                     setContentView(R.layout.activity_homepage);
@@ -36,8 +38,8 @@ public class MainActivity extends AppCompatActivity {
                     navView2.getMenu().getItem(1).setChecked(true);
                     mTextMessage = findViewById(R.id.message);
                     navView2.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-                    Intent intent = new Intent(MainActivity.this, homepage2.class);
-                    startActivity(intent);
+                    Intent intent1 = new Intent(MainActivity.this, homepage2.class);
+                    startActivity(intent1);
                     return true;
                 case R.id.navigation_notifications:
                     setContentView(R.layout.activity_main);
